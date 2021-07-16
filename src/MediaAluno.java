@@ -155,10 +155,10 @@ public class MediaAluno extends javax.swing.JFrame {
         
         //Atribuindo os valores dos objetos as variáveis
         vNome = jNome.getText();
-        vN1 = Double.parseDouble(jN1.getText());
-        vN2 = Double.parseDouble(jN2.getText());
-        vN3 = Double.parseDouble(jN3.getText());
-        vN4 = Double.parseDouble(jN4.getText());
+        vN1   = Double.parseDouble(jN1.getText());
+        vN2   = Double.parseDouble(jN2.getText());
+        vN3   = Double.parseDouble(jN3.getText());
+        vN4   = Double.parseDouble(jN4.getText());
         
         //Fazendo o cálculo
         vMedia = (vN1 + vN2 + vN3 + vN4) / 4;
@@ -167,7 +167,7 @@ public class MediaAluno extends javax.swing.JFrame {
         if(vMedia > 7){
             //Verdadeiro
             vStatus = "Aprovado(a)!";
-        }else if(vMedia < 5) {
+        }else if(vMedia < 5){
             //Falso
             vStatus = "Reprovado(a)!";
         }else{
@@ -193,20 +193,15 @@ public class MediaAluno extends javax.swing.JFrame {
 
         //Colocando o cursor em Nome
         jNome.requestFocus();
-
     }//GEN-LAST:event_jBtnLimparActionPerformed
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         //Ao iniciar o aplicativo
+        //Centralizando o aplicativo
         this.setLocationRelativeTo(null);
     }//GEN-LAST:event_formWindowOpened
 
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -223,9 +218,7 @@ public class MediaAluno extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(MediaAluno.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
 
-        /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new MediaAluno().setVisible(true);
