@@ -24,7 +24,7 @@ A aplicação consiste em uma inserção de valores pelo o usuário em cinco JTe
 ## Back end
 - Java
   - Lógicas de Programação
-  - Metódos If/Else if/Else para verificação
+  - Metódos if/Else para verificação
   - JOptionPane para exibir a mensagem
 ## Front end
 - Form JFrame
